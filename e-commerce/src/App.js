@@ -29,41 +29,30 @@ const Produtos = () => {
   return (
     <div className='container'>
       <h1>Sua seleção especial</h1>
-      {
-        Object
-          .keys(products)
-          .map(produto => {
-            console.log(produto)
-          return(
-            <table>
-              <tbody>
-                <tr key={produto}>
-                  <td>
-                    {products[produto].image}
-                    {products[produto].name}
-                    img01
-                    Nome
-                    descrição
-                    de:
-                    Por:
-                    ou x
-                    <button>Comprar</button>
-                  </td>
-                  <td>img02</td>
-                  <td>img03</td>
-                  <td>img04</td>
-                </tr>
-                <tr> 
-                  <td>img05</td>
-                  <td>img06</td>
-                  <td>img07</td>
-                  <td>img08</td>
-                </tr>
-              </tbody>
-            </table>
-          )
-        })
-      }
+      <div  className='produtos'>
+        {
+          Object
+            .keys(products)
+            .map(produto => {
+              console.log(produto)
+            return(
+              <div key={produto} className='produto'>
+                <div>
+                  <img src={products[produto].image} />
+                </div>
+                <div>
+                  <p>{products[produto].name}</p>
+                  <p>{products[produto].description}</p>
+                  <p>De:{products[produto].oldPrice}</p>
+                  <p>Por:{products[produto].price}</p>
+                  <p>ou {products[produto].installments.count} de R${products[produto].installments.value}</p>
+                </div>
+                <button className='btn-cmp'>Comprar</button>
+              </div>
+            )
+          })
+        }
+      </div>
       <button>Ainda mais produtos aqui!</button>
     </div>
   )
@@ -86,7 +75,7 @@ const Compartilhamento = () => {
 
 function App() {
   return (
-    <div className='container'>
+    <div>
       <Header />
       <Produtos />
       <Compartilhamento />

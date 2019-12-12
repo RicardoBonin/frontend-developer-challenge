@@ -7,3 +7,40 @@ footer {
   background: #707070;
   text-align: center;
 }
+
+.container {
+  border: solid 1px;
+  text-align: center;
+}
+
+.produtos {
+  margin: auto;
+  border: solid 1px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 931px;
+  height: 740px;
+}
+.produto{
+  margin: auto;
+  padding: 3px;
+  width: 201px;
+  height: 350px;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+img {
+  width: 200px;
+  height: 150px;
+  border: 2px solid  #707070;
+}
+
+.btn-cmp {
+  width: 200px;
+  height: 30px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  border-radius: 4px;
+  opacity: 1;
+}
