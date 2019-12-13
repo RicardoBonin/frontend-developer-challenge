@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './App.css'
-import {products} from './endpoint'
+import { products, nextPage } from './endpoint'
 
 const Header = () => {
   return (
@@ -25,7 +25,8 @@ const Footer = () => {
   )
 }
 const Produtos = () => {  
-  
+  const [prod, setProd] = useState('true')
+
   return (
     <div className='container'>
       <h1>Sua seleção especial</h1>
@@ -34,7 +35,7 @@ const Produtos = () => {
           Object
             .keys(products)
             .map(produto => {
-              console.log(produto)
+              console.log(prod)
             return(
               <div key={produto} className='produto'>
                 <div>
@@ -52,14 +53,36 @@ const Produtos = () => {
             )
           })
         }
+        {prod &&
+          Object
+            .keys(nextPage)
+            .map(produto => {
+              console.log(prod)
+            return(
+              <div key={produto} className='produto'>
+                <div>
+                  <img src={products[produto].image} />
+                </div>
+                <div>
+                  <p>{products[produto].name}</p>
+                  <p>{products[produto].description}</p>
+                  <p>De:{products[produto].oldPrice}</p>
+                  <p>Por:{products[produto].price}</p>
+                  <p>ou {products[produto].installments.count} de R${products[produto].installments.value}</p>
+                </div>
+                <button className='btn-cmp'>Comprar</button>
+              </div>
+              )
+          })
+        }
       </div>
-      <button>Ainda mais produtos aqui!</button>
+      <button onClick={() => setProd(!prod)}>Ainda mais produtos aqui!</button>
     </div>
   )
 }
 const Compartilhamento = () => {
   return(
-    <div>
+    <div className='container'>
       <h1>Compartilhe a novidade</h1>
       <p>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
       <form>

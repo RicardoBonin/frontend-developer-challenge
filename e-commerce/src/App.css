@@ -14,19 +14,20 @@ footer {
 }
 
 .produtos {
+  padding: 20px;
   margin: auto;
   border: solid 1px;
   display: flex;
   flex-wrap: wrap;
   width: 931px;
-  height: 740px;
+  height: auto;
 }
 .produto{
   margin: auto;
   padding: 3px;
   width: 201px;
   height: 350px;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 14px;
 }
 
