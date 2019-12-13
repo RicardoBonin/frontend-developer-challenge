@@ -25,7 +25,7 @@ const Footer = () => {
   )
 }
 const Produtos = () => {  
-  const [prod, setProd] = useState('true')
+  const [prod, setProd] = useState('false')
 
   return (
     <div className='container'>
@@ -44,31 +44,31 @@ const Produtos = () => {
                 <div>
                   <p>{products[produto].name}</p>
                   <p>{products[produto].description}</p>
-                  <p>De:{products[produto].oldPrice}</p>
-                  <p>Por:{products[produto].price}</p>
-                  <p>ou {products[produto].installments.count} de R${products[produto].installments.value}</p>
+                  <p>De:{products[produto].oldPrice.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</p>
+                  <p>Por:{products[produto].price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</p>
+                  <p>ou {products[produto].installments.count} de {products[produto].installments.value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</p>
                 </div>
                 <button className='btn-cmp'>Comprar</button>
               </div>
             )
           })
         }
-        {prod &&
+        {!prod &&
           Object
             .keys(nextPage)
-            .map(produto => {
-              console.log(prod)
+            .map(pro => {
+              console.log(pro)
             return(
-              <div key={produto} className='produto'>
+              <div key={pro} className='produto'>
                 <div>
-                  <img src={products[produto].image} />
+                  <img src={nextPage[pro].image} />
                 </div>
                 <div>
-                  <p>{products[produto].name}</p>
-                  <p>{products[produto].description}</p>
-                  <p>De:{products[produto].oldPrice}</p>
-                  <p>Por:{products[produto].price}</p>
-                  <p>ou {products[produto].installments.count} de R${products[produto].installments.value}</p>
+                  <p>{nextPage[pro].name}</p>
+                  <p>{nextPage[pro].description}</p>
+                  <p>De:{nextPage[pro].oldPrice.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</p>
+                  <p>Por:{nextPage[pro].price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</p>
+                  <p>ou {nextPage[pro].installments.count} de {nextPage[pro].installments.value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</p>
                 </div>
                 <button className='btn-cmp'>Comprar</button>
               </div>
