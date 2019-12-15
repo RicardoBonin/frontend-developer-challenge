@@ -29,8 +29,8 @@ const ToShare = () => {
   
   return(
     <div className='share'>
-      <h1>Compartilhe a novidade</h1>
-      <p>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
+      <h4 className='h4-products'>Compartilhe a novidade</h4>
+      <p className='p-style-p'>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
       <form>
         <div className='principal'>
           <div className="n01">
@@ -54,7 +54,7 @@ const ToShare = () => {
             <span>[ERRO!] Campo nome vazio!</span>
           </div>
         }
-        <button onClick={validate}>Enviar agora!</button>
+        <button className='btn-share' onClick={validate}>Enviar agora!</button>
       </form>
         </div>
   )

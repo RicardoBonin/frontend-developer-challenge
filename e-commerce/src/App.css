@@ -32,6 +32,13 @@ header {
 footer {
   background: #707070;
   text-align: center;
+  margin-top: 142px;
+  height: 201px;
+  padding: 64px;
+  color: #FFFFFF;
+  font: Regular 12px/18px Helvetica Neue;
+  letter-spacing: 0;
+  opacity: 1;
 }
 
 .container {
@@ -43,6 +50,17 @@ footer {
   letter-spacing: 0;
   color: #888888;
   opacity: 1;
+}
+.p-style{
+  font: Regular 14px/16px Helvetica Neue;
+  letter-spacing: 0;
+  opacity: 1;
+}
+.p-style-p{
+  font: Regular 14px/16px Helvetica Neue;
+  letter-spacing: 0;
+  opacity: 1;
+  margin-top: 44px;
 }
 .produtos {
   padding: 20px;
@@ -63,12 +81,13 @@ footer {
 }
 
 img {
-  padding: 10px;
   width: 200px;
   height: 150px;
   border: 2px solid  #707070;
 }
-
+form{
+  margin-top: 60px;
+}
 .btn-cmp {
   width: 200px;
   height: 30px;
@@ -79,7 +98,6 @@ img {
   font: Regular 16px/16px Helvetica Neue;
   letter-spacing: 0;
   color: #888888;
-  opacity: 1;
 }
 .btn-prod{
   background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -92,7 +110,18 @@ img {
   font: Regular 16px/16px Helvetica Neue;
   letter-spacing: 0;
   color: #888888;
+}
+.btn-share{
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  border-radius: 4px;
+  margin-top: 50px;
   opacity: 1;
+  width: 260px;
+  height: 39px;
+  font: Regular 16px/16px Helvetica Neue;
+  letter-spacing: 0;
+  color: #888888;
 }
 input {
   display: block;
@@ -113,6 +142,9 @@ input {
 }
 .share{
   text-align: center;
+  margin-top: 164px;
+  color: #888888;
+
 }
 .error{
   color: brown;
