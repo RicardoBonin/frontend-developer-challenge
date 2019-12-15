@@ -6,7 +6,7 @@ const Produts = () => {
 
   return (
     <div className='container'>
-      <h4>Sua seleção especial</h4>
+      <h4 className='h4-products'>Sua seleção especial</h4>
       <div  className='produtos'>
         {
           Object

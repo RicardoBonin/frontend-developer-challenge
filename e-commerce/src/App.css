@@ -7,6 +7,7 @@ body{
   
 }
 header {
+  color: #FFFFFF;
   background: #707070;
   text-align: center;
   padding: 69px;
@@ -22,6 +23,10 @@ header {
   border-radius: 4px;
   opacity: 1;
   margin-right: 40px;
+  margin-top: 30px;
+  font: Regular 14px/16px Helvetica Neue;
+  letter-spacing: 0;
+  color: #888888;
 }
 
 footer {
@@ -30,14 +35,19 @@ footer {
 }
 
 .container {
-  border: solid 1px;
   text-align: center;
 }
-
+.h4-products{
+  margin-top: 49px;
+  font: Bold 18px;
+  letter-spacing: 0;
+  color: #888888;
+  opacity: 1;
+}
 .produtos {
   padding: 20px;
   margin: auto;
-  border: solid 1px;
+  margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
   width: 931px;
@@ -53,6 +63,7 @@ footer {
 }
 
 img {
+  padding: 10px;
   width: 200px;
   height: 150px;
   border: 2px solid  #707070;
@@ -65,9 +76,23 @@ img {
   border: 1px solid #707070;
   border-radius: 4px;
   opacity: 1;
+  font: Regular 16px/16px Helvetica Neue;
+  letter-spacing: 0;
+  color: #888888;
+  opacity: 1;
 }
-form {
-  border: 1px solid;
+.btn-prod{
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  border-radius: 4px;
+  margin-top: 49px;
+  opacity: 1;
+  width: 260px;
+  height: 39px;
+  font: Regular 16px/16px Helvetica Neue;
+  letter-spacing: 0;
+  color: #888888;
+  opacity: 1;
 }
 input {
   display: block;
