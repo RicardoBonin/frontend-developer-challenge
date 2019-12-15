@@ -53,7 +53,14 @@ const Produts = () => {
           })
         }
       </div>
-      <button onClick={() => setProd(!prod)}>Ainda mais produtos aqui!</button>
+      {
+        prod &&
+        <button className='btn-prod' onClick={() => setProd(!prod)}>Ainda mais produtos aqui!</button>
+      }
+      {
+        !prod &&
+        <button className='btn-prod' onClick={() => setProd(!prod)}>Fechar Produtos</button>
+      }
     </div>
   )
 }
