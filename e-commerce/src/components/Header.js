@@ -3,13 +3,13 @@ import React from 'react'
 const Header = () => {
   return (
     <header>
-        <p>Uma seleção de produtos</p>
+        <h2>Uma seleção de produtos</h2>
         <h1>especial para você</h1>
-        <p>Todos os produtos dessa lista foram selecionados a partir da sua navegação. Aproveite!</p>
-        <button>Conheça a Linx</button>
-        <button>Ajude o algoritimo</button>
-        <button>Seus produtos</button>
-        <button>Compartilhe</button>
+        <h4>Todos os produtos dessa lista foram selecionados a partir da sua navegação. Aproveite!</h4>
+        <button className='btn-header'>Conheça a Linx</button>
+        <button className='btn-header'>Ajude o algoritimo</button>
+        <button className='btn-header'>Seus produtos</button>
+        <button className='btn-header'>Compartilhe</button>
       </header>
   )
 }
