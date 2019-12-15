@@ -26,7 +26,7 @@ const ToShare = () => {
     if (name.length === 0) {
       setName('error')
     }
-    if(name.length > 0 && error === false) {
+    if(name.length > 0 && error !== false ) {
       setValidate(true)
     }
   }

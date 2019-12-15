@@ -3,8 +3,8 @@ import React from 'react'
 const Header = () => {
   return (
     <header>
-        <h2>uma seleção de produtos</h2>
-        <h1>especial para você</h1>
+        <p className='p-h-1'>uma seleção de produtos</p>
+        <p className='p-h-2'>especial para você</p>
         <p className='p-style'>Todos os produtos dessa lista foram selecionados a partir da sua navegação. Aproveite!</p>
         <button className='btn-header'>Conheça a Linx</button>
         <button className='btn-header'>Ajude o algoritimo</button>
