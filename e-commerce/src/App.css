@@ -127,6 +127,7 @@ input {
   display: block;
   width: 340px;
   height: 30px;
+  color: #888888;
 }
 .principal {
   display: flex;
@@ -148,4 +149,5 @@ input {
 }
 .error{
   color: brown;
+  margin-top: 50px;
 }

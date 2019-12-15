@@ -4,6 +4,7 @@ const ToShare = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('')
   const [error, setError] = useState(false)
+  const [valida, setValidate] = useState(false)
 
   const onblurName = evt => {
     setName(evt.target.value)
@@ -25,6 +26,9 @@ const ToShare = () => {
     if (name.length === 0) {
       setName('error')
     }
+    if(name.length > 0 && error === false) {
+      setValidate(true)
+    }
   }
   
   return(
@@ -35,7 +39,7 @@ const ToShare = () => {
         <div className='principal'>
           <div className="n01">
             <label htmlFor='Lname'>Nome:</label>
-            <input type='text' id='Lname' onChange={onblurName} />
+            <input type='text' id='Lname' onBlur={onblurName} />
           </div>
           <div className='n02'>
             <label htmlFor='email'>E-mail: </label>
@@ -52,6 +56,12 @@ const ToShare = () => {
           name === 'error' &&
           <div className='error'>
             <span>[ERRO!] Campo nome vazio!</span>
+          </div>
+        }
+        {
+          valida &&
+          <div className='error' style={{color: 'green'}}>
+            <span>Novidade compartilhada com sucesso!</span>
           </div>
         }
         <button className='btn-share' onClick={validate}>Enviar agora!</button>
