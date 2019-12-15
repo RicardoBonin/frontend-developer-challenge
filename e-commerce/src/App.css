@@ -75,11 +75,30 @@ footer {
   margin: auto;
   padding: 3px;
   width: 201px;
-  height: 350px;
   font-size: 10px;
   line-height: 14px;
 }
-
+.title{
+  text-align: left;
+  font: 16px/16px Helvetica ;
+  letter-spacing: 0;
+  color: #888888;
+  opacity: 1;
+}
+.description{
+  text-align: left;
+  font:  12px/14px Helvetica ;
+  letter-spacing: 0;
+  color: #888888;
+  opacity: 1;
+}
+.price{
+  text-align: left;
+  font: Bold 16px/16px Helvetica ;
+  letter-spacing: 0;
+  color: #888888;
+  opacity: 1;
+}
 img {
   width: 200px;
   height: 150px;

@@ -19,11 +19,11 @@ const Produts = () => {
                   <img src={products[produto].image} />
                 </div>
                 <div>
-                  <p>{products[produto].name}</p>
-                  <p>{products[produto].description}</p>
-                  <p>De:{products[produto].oldPrice.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</p>
-                  <p>Por:{products[produto].price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</p>
-                  <p>ou {products[produto].installments.count} de {products[produto].installments.value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</p>
+                  <p className='title'>{products[produto].name}</p>
+                  <p className='description'>{products[produto].description}</p>
+                  <p className='description'>De:{products[produto].oldPrice.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</p>
+                  <p className='price'>Por:{products[produto].price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</p>
+                  <p className='description'>ou {products[produto].installments.count} de {products[produto].installments.value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</p>
                 </div>
                 <button className='btn-cmp'>Comprar</button>
               </div>
