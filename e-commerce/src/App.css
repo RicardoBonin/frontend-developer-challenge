@@ -116,6 +116,8 @@ img {
   border: 1px solid  #707070;
 }
 form{
+  margin: auto;
+  width: 65%;
   margin-top: 60px;
 }
 .btn-cmp {
@@ -162,10 +164,11 @@ input {
 .principal {
   display: flex;
   text-align: left;
+  
 }
 
 .n01{
-  
+  margin: auto;
 }
 .n02{
   margin-left: 40px;

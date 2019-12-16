@@ -1,9 +1,10 @@
-import React, { useState} from 'react'
+import React, { useState, useEffect} from 'react'
 
 const ToShare = () => {
-  const [name, setName] = useState('');
+  const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [error, setError] = useState(false)
+  const [errorN, setErrorN] = useState(false)
   const [valida, setValidate] = useState(false)
 
   const onblurName = evt => {
@@ -23,10 +24,10 @@ const ToShare = () => {
     } else{
       setError(true)
     }
-    if (name.length === 0) {
-      setName('error')
+    if (name.length === 0){
+      setErrorN(true)
     }
-    if(name.length > 0 && error !== false ) {
+    if(errorN === false && error === false ) {
       setValidate(true)
     }
   }
@@ -54,13 +55,13 @@ const ToShare = () => {
           </div>
         }
         {
-          name === 'error' &&
+          errorN === true &&
           <div className='error'>
             <span>[ERRO!] Campo nome vazio!</span>
           </div>
         }
         {
-          valida &&
+          valida === true &&
           <div className='error' style={{color: 'green'}}>
             <span>Novidade compartilhada com sucesso!</span>
           </div>
