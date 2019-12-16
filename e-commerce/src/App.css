@@ -113,7 +113,7 @@ footer {
 img {
   width: 200px;
   height: 150px;
-  border: 2px solid  #707070;
+  border: 1px solid  #707070;
 }
 form{
   margin-top: 60px;
@@ -165,7 +165,6 @@ input {
 }
 
 .n01{
-  margin-left: 18%;
   
 }
 .n02{
