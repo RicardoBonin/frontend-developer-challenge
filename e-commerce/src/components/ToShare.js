@@ -32,6 +32,7 @@ const ToShare = () => {
   }
   
   return(
+    <div className='container'>
     <div className='share'>
       <h4 className='h4-products'>Compartilhe a novidade</h4>
       <p className='p-style-p'>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
@@ -67,7 +68,8 @@ const ToShare = () => {
         <button className='btn-share' onClick={validate}>Enviar agora!</button>
       </form>
         </div>
-  )
+        </div>
+        )
 }
 
 export default ToShare

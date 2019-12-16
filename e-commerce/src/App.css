@@ -1,5 +1,4 @@
 body{
-  width: 1500px;
   font:  14px/16px Helvetica ;
   letter-spacing: 0;
   color: #888888;
@@ -166,7 +165,7 @@ input {
 }
 
 .n01{
-  margin-left: 390px;
+  margin-left: 18%;
   
 }
 .n02{
@@ -176,7 +175,6 @@ input {
   text-align: center;
   margin-top: 164px;
   color: #888888;
-
 }
 .error{
   color: brown;
